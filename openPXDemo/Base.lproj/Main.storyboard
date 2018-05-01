@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4z-uI-bBW">
+                                <rect key="frame" x="49" y="82" width="139" height="30"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.87450980389999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="F9c-xt-byF"/>
+                                    <constraint firstAttribute="width" constant="139" id="dbz-yv-0Jw"/>
+                                </constraints>
+                                <state key="normal" title="国际版"/>
+                                <connections>
+                                    <action selector="openComApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBd-Ra-ZBd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nh-PT-ipU">
+                                <rect key="frame" x="49" y="182" width="139" height="30"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.87450980389999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="BJy-gf-fJ3"/>
+                                    <constraint firstAttribute="height" constant="30" id="Y6I-N2-Gtb"/>
+                                </constraints>
+                                <state key="normal" title="中国版"/>
+                                <connections>
+                                    <action selector="openMeApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKS-Wf-Ly3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K4z-uI-bBW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="1ne-PP-gyw"/>
+                            <constraint firstItem="3Nh-PT-ipU" firstAttribute="top" secondItem="K4z-uI-bBW" secondAttribute="bottom" constant="70" id="S1D-z7-8H0"/>
+                            <constraint firstItem="3Nh-PT-ipU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="Syd-hj-DLo"/>
+                            <constraint firstItem="K4z-uI-bBW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="va0-m3-SiK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
